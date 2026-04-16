@@ -12,7 +12,7 @@ filtrer_par_genre(data, g)
 \item{g}{Le genre à filtrer ("Male" ou "Female")}
 }
 \value{
-Un dataframe filtré
+Un dataframe filtre
 }
 \description{
 Filtrer les données par genre

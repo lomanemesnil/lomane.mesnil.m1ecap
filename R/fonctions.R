@@ -1,8 +1,11 @@
+# Déclaration des variables globales
+utils::globalVariables(c("gender", "time_seconds", "country"))
+
 #' Filtrer les données par genre
 #'
 #' @param data Le dataframe marathon2
 #' @param g Le genre à filtrer ("Male" ou "Female")
-#' @return Un dataframe filtré
+#' @return Un dataframe filtre
 #' @export
 filtrer_par_genre <- function(data, g) {
   return(data[data$gender == g, ])
@@ -14,7 +17,7 @@ filtrer_par_genre <- function(data, g) {
 #' @importFrom dplyr group_by summarise n
 #' @export
 records_par_pays <- function(data) {
-  # On cherche le temps minimum (le record) pour chaque pays
+  # le temps minimum (le record) pour chaque pays
   res <- dplyr::summarise(dplyr::group_by(data, country),
                           meilleur_temps = min(time_seconds, na.rm = TRUE),
                           nombre_victoires = dplyr::n())
@@ -29,7 +32,7 @@ records_par_pays <- function(data) {
 plot_marathon_box <- function(data) {
 
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
-    stop("Le package ggplot2 est nécessaire.")
+    stop("Le package ggplot2 est necessaire.")
   }
 
   ggplot2::ggplot(data) +
