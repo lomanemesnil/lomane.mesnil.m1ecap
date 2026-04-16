@@ -21,13 +21,13 @@ records_par_pays <- function(data) {
   return(res)
 }
 
-#' Graphique de répartition des temps par genre (Boxplot)
+#' Graphique de repartition des temps par genre (Boxplot)
 #'
 #' @param data Le dataframe marathon2
 #' @import ggplot2
 #' @export
 plot_marathon_box <- function(data) {
-  # On vérifie que ggplot2 est bien là
+
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Le package ggplot2 est nécessaire.")
   }
@@ -36,7 +36,7 @@ plot_marathon_box <- function(data) {
     ggplot2::aes(x = gender, y = time_seconds, fill = gender) +
     ggplot2::geom_boxplot(alpha = 0.7) +
     ggplot2::labs(
-      title = "Répartition des temps de course par genre",
+      title = "Repartition des temps de course par genre",
       subtitle = "Source: World Marathon Majors",
       x = "Genre",
       y = "Temps (en secondes)"
