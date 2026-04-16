@@ -6,10 +6,10 @@ output: github_document
 
 **Nom :** Lomane MESNIL
 
-## Consignes de l'examen
-* Le premier commit de ce répertoire a été effectué le **16/04/2026** à **09h30** (Vérifie bien l'heure sur ton GitHub !)
+## Heure du premier commit
+Le premier commit de ce répertoire a été effectué le **16/04/2026** à **09h30**.
 
-## Exercice historique Git
+## Exercice 
 Pour obtenir l'historique non linéaire présenté dans le sujet, voici la suite de commandes git à exécuter :
 
 ```bash
