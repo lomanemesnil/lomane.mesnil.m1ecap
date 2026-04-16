@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{marathon2}}{
 
-A data frame with 536 rows and 7 columns:
+Un data frame avec 536 lignes et 7 colonnes:
 \describe{
 \item{year}{Année de la course}
 \item{winner}{Nom du vainqueur}
