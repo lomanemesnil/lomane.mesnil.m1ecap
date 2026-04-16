@@ -2,7 +2,7 @@
 % Please edit documentation in R/fonctions.R
 \name{plot_marathon_box}
 \alias{plot_marathon_box}
-\title{Graphique de répartition des temps par genre (Boxplot)}
+\title{Graphique de repartition des temps par genre (Boxplot)}
 \usage{
 plot_marathon_box(data)
 }
@@ -10,5 +10,5 @@ plot_marathon_box(data)
 \item{data}{Le dataframe marathon2}
 }
 \description{
-Graphique de répartition des temps par genre (Boxplot)
+Graphique de repartition des temps par genre (Boxplot)
 }
