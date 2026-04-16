@@ -1,0 +1,39 @@
+---
+title: "Explication de la fonction plot_marathon_box"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fonction-plot_marathon_box}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Intéret
+
+L'objectif de cette vignette est de montrer comment utiliser la fonction de visualisation du package pour comparer les performances entre les genres.
+
+## Chargement du package et des données
+
+```{r}
+library(lomane.mesnil.m1ecap)
+library(ggplot2)
+
+# On utilise les données intégrées au package
+data("marathon2")
+```
+
+## Utilisation
+
+La fonction plot_marathon_box permet de visualiser rapidement la distribution des temps (en secondes) pour les coureurs et les coureuses. Elle utilise une palette de couleurs contrastée et un thème minimal.
+
+```{r}
+# graphique
+plot_marathon_box(marathon2)
+```
+
+## Interprétation
+
+Ce graphique permet d'observer :\
+- La médiane des temps pour chaque groupe\
+- La dispersion des performances (l'écart interquartile)\
+- Les éventuels "outliers" (coureurs exceptionnellement rapides ou lents).
+

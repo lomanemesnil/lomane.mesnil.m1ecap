@@ -37,7 +37,6 @@ plot_marathon_box <- function(data) {
     ggplot2::geom_boxplot(alpha = 0.7) +
     ggplot2::labs(
       title = "Repartition des temps de course par genre",
-      subtitle = "Source: World Marathon Majors",
       x = "Genre",
       y = "Temps (en secondes)"
     ) +
